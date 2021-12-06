@@ -1,5 +1,6 @@
 const Colors = {
-  primary: '#627597',
+  disabled: '#627597',
+  success: '#2da44e',
 }
 
 export default Colors

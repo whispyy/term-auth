@@ -9,7 +9,7 @@ const ContainerBox = styled.div`
   border: solid 1px #202637;
   border-radius: ${Metrics.radius.normal}px;
   background-color: #0c162d;
-  color: ${Colors.primary};
+  color: ${Colors.disabled};
 `
 
 export default ContainerBox
