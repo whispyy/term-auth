@@ -3,6 +3,7 @@ import { Colors } from '../theme'
 
 const IconContainer = styled.div`
   height: 16px;
+  width: 16px;
 `
 
 const Icon = styled.svg.attrs({ 

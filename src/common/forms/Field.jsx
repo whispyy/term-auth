@@ -3,11 +3,11 @@ import Input from './Input'
 
 const Field = ({
   id = 'default',
-  label,
+  labelText,
   ...props
 }) => (
   <div>
-    <Label for={id}>{label}</Label>
+    <Label htmlFor={id}>{labelText}</Label>
     <Input id={id} {...props} />
   </div>
 )

@@ -1,10 +1,17 @@
+import styled from 'styled-components'
 import SignupBox from './SignupBox'
+
+const Page = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: dark-grey;
+`
 
 const Signup = () => {
   return (
-    <div style={{ background: 'darkGrey' }}>
+    <Page>
       <SignupBox />
-    </div>
+    </Page>
   )
 }
 

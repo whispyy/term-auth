@@ -5,6 +5,7 @@ const Wrapper = styled.div`
   display: flex;
   flex: 0 0 auto;
   align-items: center;
+  margin: 8px 0;
 `
 
 const StyledInput = styled.input`
@@ -14,7 +15,7 @@ const StyledInput = styled.input`
 
   color: white;
   font-weight: 700;
-  height: 16px;
+  font-size: 16px;
 `
 
 const Input = ({ ...props }) => (
