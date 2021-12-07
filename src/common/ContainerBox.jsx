@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Colors, Metrics } from "./theme";
+import styled from 'styled-components'
+import { Colors, Metrics } from './theme'
 
 
 const ContainerBox = styled.div`

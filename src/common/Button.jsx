@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import { Colors, Metrics } from "./theme";
 
 const Button = styled.button`
