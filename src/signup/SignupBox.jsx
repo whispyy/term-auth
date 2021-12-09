@@ -11,11 +11,21 @@ const Text = styled.p`
 const Row = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
 `
 
 const ButtonContainer = styled.div`
   display: flex;
   align-items: flex-end;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 `
 
 const Signup = () => {
@@ -30,7 +40,7 @@ const Signup = () => {
   }
   const submit = () => {
     if (password.length > 8) {
-      console.log(email, password)
+      alert(`signup sent for ${email}`)
     }
   }
 

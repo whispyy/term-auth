@@ -8,6 +8,7 @@ const Button = styled.button`
   border-radius: ${Metrics.radius.normal}px;
   padding: ${Metrics.small}px ${Metrics.medium}px;
   cursor: ${({ disabled }) => disabled ? 'unset' : 'pointer'};
+  width: inherit;
 
   &:hover {
     opacity: ${({ disabled }) => disabled ? '1' : '0.8'};
