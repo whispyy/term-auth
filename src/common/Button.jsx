@@ -9,13 +9,14 @@ const Button = styled.button`
   padding: ${Metrics.small}px ${Metrics.medium}px;
   cursor: ${({ disabled }) => disabled ? 'unset' : 'pointer'};
   width: inherit;
+  ${({ disabled }) => disabled && `cursor: not-allowed`};
 
   &:hover {
     opacity: ${({ disabled }) => disabled ? '1' : '0.8'};
   }
 
   &:active {
-    opacity: 0.6;
+    opacity: ${({ disabled }) => disabled ? '1' : '0.6'};
   }
 `
 
