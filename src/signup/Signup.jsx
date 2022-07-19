@@ -1,11 +1,11 @@
 import Page from '../common/Page'
-import HeaderLink from './HeaderLink'
 import SignupBox from './SignupBox'
+import HeaderLink from '../common/HeaderLink'
 
 const Signup = () => {
   return (
     <Page>
-      <HeaderLink />
+      <HeaderLink prefixText="Have an account?" href="/signin" linkText="Sign in" />
       <SignupBox />
     </Page>
   )

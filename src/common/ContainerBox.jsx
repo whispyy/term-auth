@@ -4,7 +4,7 @@ import { Colors, Metrics } from './theme'
 
 const ContainerBox = styled.div`
   width: 80%;
-  max-width: 600px;
+  max-width: ${({ maxWidth }) => maxWidth ? maxWidth : '600'}px;
   margin: ${Metrics.large}px;
   padding: ${Metrics.large}px;
   border: solid 1px #202637;

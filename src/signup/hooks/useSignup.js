@@ -5,6 +5,7 @@ import { emailRegex, passwordRegex } from '../../common/utils'
 const useSignup = () => {
   const [email, setEmail] = useState('')
   const [emailSubmitted, setEmailSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [password, setPassword] = useState('')
   const [error, setError] = useState()
 
@@ -17,11 +18,15 @@ const useSignup = () => {
 
   const isPasswordValid = password.length > 8 && passwordRegex.test(password)
   const submit = () => {
+    setError()
+
+    setLoading(true)
     if (isPasswordValid) {
       alert(`signup sent for ${email}`)
     } else {
       setError('error message')
     }
+    setLoading(false)
   }
 
   return {
@@ -38,6 +43,7 @@ const useSignup = () => {
       isValid: isPasswordValid,
     },
     submit,
+    loading,
     error,
   }
 }

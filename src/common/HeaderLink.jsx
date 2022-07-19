@@ -28,11 +28,15 @@ const Link = styled.a`
 `
 
 
-const HeaderLink = () => {
+const HeaderLink = ({
+  href,
+  linkText,
+  prefixText,
+}) => {
   return (
     <Container>
-      <Text>Have an account?</Text>
-      <Link href="/signin">Sign in</Link>
+      {!!prefixText && <Text>{prefixText}</Text>}
+      <Link href={href}>{linkText}</Link>
     </Container>
   )
 }
