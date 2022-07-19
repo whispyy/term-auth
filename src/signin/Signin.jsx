@@ -19,7 +19,7 @@ const Signin = () => {
 
   return (
     <Page>
-      <HeaderLink href="/signup" linkText="Sign up" />
+      <HeaderLink href={`/${pagesMapping.signup}`} linkText="Sign up" />
       <Title>Sign in</Title>
 
       <SigninBox />

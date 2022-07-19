@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState, useMemo, createContext } from 'react'
 
 export const pagesMapping = { 
-  home: "signup",
-  signin: "signin",
-  signup: "signup",
+  home: 'term-auth/',
+  signin: 'term-auth/signin',
+  signup: 'term-auth/signup',
 }
 
 export const RoutingContext = createContext({ page: pagesMapping.home })

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Colors, Metrics } from '../common/theme'
+import Link from './Link'
 
 const Container = styled.div`
   margin-right: ${Metrics.xlarge}px;
@@ -17,16 +18,6 @@ const Text = styled.span`
     display: none;
   }
 `
-
-const Link = styled.a`
-  color: white;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`
-
 
 const HeaderLink = ({
   href,
